@@ -1,0 +1,201 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 140vh; */
+    margin: 0;
+}
+
+.log-in-image {
+    margin: 0;
+    width: 100%;
+    height: 130%;  
+    position: absolute;
+    z-index: 1;
+}
+
+.log-in-image.sign-up-new{
+    height: 110%;  
+}
+
+.log-in-image img {
+    height: 100%;
+}
+
+.log-in-image img:nth-child(1) {
+    display: none;
+}
+
+.log-in-area {
+    width: 25em;
+    background-color: white;
+    padding: 4em 1em 2em;
+    text-align: center;
+    z-index: 2;
+    border-radius: 10px;
+    margin: 2em 0;
+}
+
+.log-in-area h1{
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.log-in-area .log-in-form .input-item{
+    position: relative;
+}
+
+.log-in-area .log-in-form .input-item input{
+    width: 90%;
+    padding: .5em;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    outline: 0;
+    border: 1px solid #2b381f;
+    transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    margin-bottom: 1em;
+}
+
+.log-in-area .log-in-form .input-item .fieldset{
+    text-align: left;
+    position: absolute;
+    top: -10px;
+    left: 40px;
+    background-color: white;
+    padding: 0 5px;
+    font-size: .8rem;
+    color: #638A5C;
+    font-weight: 500;
+    visibility: hidden;
+}
+
+.log-in-area .log-in-form .input-item input:focus{
+    border: 2.5px solid #638A5C;
+}
+
+.log-in-area .log-in-form .input-item input:focus~.fieldset{
+    visibility: visible;
+}
+
+.log-in-area .log-in-form .input-item input:focus::placeholder{
+    color: transparent;
+}
+
+.log-in-area button{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    border-radius: 30px;
+    padding: 1em 0;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    transition: all .3s;
+}
+
+.log-in-area .log-in-btn{
+    background-color: #3f603b;
+}
+
+.log-in-area .log-in-btn:hover{
+    background-color: #2e442b;
+}
+
+.log-in-area .forgot-password-btn{
+    background-color: transparent;
+}
+
+.log-in-area .forgot-password-btn:hover{
+    background-color: #efefec;
+}
+
+.log-in-area .another-log-in button{
+    display: flex;
+    align-items: center;
+}
+
+.log-in-area .another-log-in img{
+    width: 20px;
+    height: 20px;
+    scale: 1.4;
+    margin: 0 1em;
+}
+
+.log-in-area .another-log-in span{
+    flex: .86;
+}
+
+.log-in-area .another-log-in .google-btn img{
+    border-radius: 2px;
+    background-color: white;
+}
+
+.log-in-area .another-log-in .google-btn{
+    background-color: #4184f3;
+}
+
+.log-in-area .another-log-in .google-btn:hover{
+    background-color: #6497ef;
+}
+
+.log-in-area .another-log-in .facebook-btn{
+    background-color: #039BE5;
+}
+
+.log-in-area .another-log-in .facebook-btn:hover{
+    background-color: #5991ea;
+}
+
+.log-in-area .another-log-in .mac-btn{
+    background-color: black;
+}
+
+.log-in-area .another-log-in .mac-btn:hover{
+    background-color: #303030;
+}
+
+.log-in-area .do-not-account{
+    font-size: 1.1rem;
+    margin: 1.5em 0;
+}
+
+.log-in-area .do-not-account span{
+    color: #656e5e;
+}
+
+.log-in-area .do-not-account a{
+    color: #2b381f;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.log-in-area .policy{
+    font-size: .9rem;
+}
+
+.log-in-area .policy a{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .log-in-image {
+        display: flex;
+    }
+
+    .log-in-area{
+        width: 30em;
+    }
+
+    .log-in-image img {
+        border-radius: 0;
+        width: 50%;
+    }
+
+    .log-in-image img:nth-child(1) {
+        display: inline-block;
+    }
+}
