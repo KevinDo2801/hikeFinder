@@ -26,4 +26,4 @@ function fetchCommon(file, id) {
 
 fetchCommon('header.html', 'header')
 fetchCommon('footer.html', 'footer')
-// fetchCommon('carousel.html', 'carousel')
+fetchCommon('carousel.html', 'carousel')
