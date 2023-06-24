@@ -24,6 +24,6 @@ function fetchCommon(file, id) {
     .then(data => document.getElementById(id).innerHTML = data);
 }
 
-fetchCommon('../header.html', 'header')
+fetchCommon('header.html', 'header')
 fetchCommon('footer.html', 'footer')
 fetchCommon('carousel.html', 'carousel')
