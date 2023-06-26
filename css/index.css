@@ -331,8 +331,7 @@ footer .footer-moreInformation {
     padding: 3em 4em;
     font-size: .8rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
+    grid-template-columns: 1fr;
 }
 
 footer .footer-moreInformation .infor-inner {
@@ -445,6 +444,10 @@ footer .footer-moreInformation p:last-of-type span {
     }
 
     /* Footer */
+    footer .footer-moreInformation {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
     .footer-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

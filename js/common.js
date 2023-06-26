@@ -1,21 +1,12 @@
 document.addEventListener('click', (e) => {
   if (e.target.id === "bars-btn") {
-      handleBars();
+    handleBars();
   }
 });
 
-let isBarDisplayed = false;
-
 function handleBars() {
   const barDiv = document.querySelector('.options');
-
-  if (!isBarDisplayed) {
-      barDiv.classList.add('displayed');
-      isBarDisplayed = true;
-  } else {
-      barDiv.classList.remove('displayed');
-      isBarDisplayed = false;
-  }
+  barDiv.classList.toggle('displayed');
 }
 
 function fetchCommon(file, id) {
